@@ -1,4 +1,3 @@
-import { sql } from '@vercel/postgres';
 import {
   CustomerField,
   CustomersTableType,
@@ -8,6 +7,7 @@ import {
   User,
   Revenue,
 } from './definitions';
+import { sql } from '@vercel/postgres';
 import { formatCurrency } from './utils';
 
 export async function fetchRevenue() {
