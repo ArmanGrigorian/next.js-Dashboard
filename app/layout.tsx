@@ -1,11 +1,11 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import '@/app/ui/global.css';
+import { inter } from '@/app/ui/fonts';
+import { Layout } from './lib/definitions';
+
+export default function RootLayout({ children }: Layout) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
