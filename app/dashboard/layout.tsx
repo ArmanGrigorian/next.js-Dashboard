@@ -1,5 +1,5 @@
-import SideNav from '@/app/ui/dashboard/sidenav';
 import { Layout } from '../lib/definitions';
+import SideNav from '@/app/ui/dashboard/sidenav';
 
 export default function Layout({ children }: Layout) {
   return (

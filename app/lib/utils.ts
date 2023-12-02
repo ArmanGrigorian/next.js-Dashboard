@@ -1,3 +1,4 @@
+import { ChangeEvent } from 'react';
 import { Revenue } from './definitions';
 
 export const formatCurrency = (amount: number) => {
@@ -67,3 +68,17 @@ export const generatePagination = (currentPage: number, totalPages: number) => {
     totalPages,
   ];
 };
+
+export function debounce(
+  callback: (e: ChangeEvent<HTMLInputElement>) => void,
+  timeout = 300,
+) {
+  let timer: NodeJS.Timeout | undefined;
+
+  return (e: ChangeEvent<HTMLInputElement>, ...args: []) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      callback(e, ...args);
+    }, timeout);
+  };
+}

@@ -2,6 +2,13 @@ export type Layout = {
   children: React.ReactNode;
 };
 
+export type SearchParams = {
+  searchParams: {
+    query: string;
+    page: string;
+  };
+};
+
 export type User = {
   id: string;
   name: string;
