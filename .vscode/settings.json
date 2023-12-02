@@ -1,3 +1,21 @@
 {
-  "cSpell.words": ["clsx", "heroicons", "ILIKE", "Lusitana", "sidenav"]
+  "cSpell.words": ["clsx", "heroicons", "ILIKE", "Lusitana", "sidenav"],
+  "cSpell.ignoreWords": [
+    "Balazs",
+    "Delba",
+    "Dietz",
+    "Kowalski",
+    "Novotny",
+    "Oliveira",
+    "Orban",
+    "Steph",
+    "balazs",
+    "delba",
+    "dietz",
+    "kowalski",
+    "novotny",
+    "oliveira",
+    "orban",
+    "steph"
+  ]
 }
