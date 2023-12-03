@@ -1,4 +1,6 @@
 'use client';
+
+import clsx from 'clsx';
 import Link from 'next/link';
 import {
   UserGroupIcon,
@@ -6,7 +8,6 @@ import {
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
 import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
 
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
