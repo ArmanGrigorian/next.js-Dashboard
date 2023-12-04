@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 import Search from '@/app/ui/search';
 import { lusitana } from '@/app/ui/fonts';
@@ -7,8 +8,11 @@ import Pagination from '@/app/ui/invoices/pagination';
 import { CreateInvoice } from '@/app/ui/invoices/buttons';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 
-export default async function Page({ searchParams }: SearchParams) {
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
+export default async function Page({ searchParams }: SearchParams) {
   const query = searchParams?.query || '';
   const currentPage = Number(searchParams?.page) || 1;
   const totalPages = await fetchInvoicesPages(query);
